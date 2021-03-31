@@ -1,7 +1,6 @@
 # Real-time object detection in the browser using TensorFlow.js
 
-This repository is part of the tutorial [Custom real-time object detection in the browser using TensorFlow.js](https://blog.tensorflow.org/2021/01/custom-object-detection-in-browser.html). **For a better understanding of how to create a custom object detection model, refer to the post**.
-
+This project is made following the tutorial [Custom real-time object detection in the browser using TensorFlow.js](https://blog.tensorflow.org/2021/01/custom-object-detection-in-browser.html).
 
 This project is a simple web-app that loads a model in the TensorFlow.js layers format using javascript and performs real-time inferences ingesting videos from a PC or mobile camera.
 
@@ -9,18 +8,6 @@ A Kangaroo detector was trained as a demo, but any object can be recognized foll
 
 ![Object detection demo](./git_media/kangaroo-demo.gif)
 <br>
-
-
-
-<body> A live demo is available on Glitch:<br>  <a  href="https://glitch.com/edit/#!/real-time-object-detection">
-<img  alt="Qries"
-src="https://www.netgovern.com/sites/default/files/styles/large/public/Try-it-Live-2.png?itok=JcCNIc7d"  width=200" height="145">
-</a>
-</body
-<br>
-
-
-## Getting started
 
 The model saved at `models/kangaroo-detector` was trained using the [kangaroo-dataset](https://www.kaggle.com/hugozanini1/kangaroodataset) available on kaggle:
 
@@ -31,11 +18,7 @@ src="./git_media/dataset.png">
 </body
 <br>
 
-
-
-You can train your own model, upload it in the `model` folder and load as well.
-
-#### Serving the model
+Train your own model, upload it in the `model` folder.
 
 To make the model available, it is necessary to define how the model is going to be loaded in the function `load_model` (lines 10–15 in the file `src>index.js`). There are two choices.
 
